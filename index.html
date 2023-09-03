@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-19</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="full">
+        <div class="container">
+            <div class="head">
+                <h1>Accordion and tabs</h1>
+            </div>
+            <hr><br><br>
+            <div class="row justify-content-between">
+                <!-- Accordion parts -->
+                <div class="left col-lg-4">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="Basic1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#html-basic1" aria-expanded="false" aria-controls="html-basic1">
+                                First Day
+                                </button>
+                            </h2>
+                            <div id="html-basic1" class="accordion-collapse collapse" aria-labelledby="Basic1" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <h5>HTML Basic</h5>
+                                    <hr>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, nemo!</p>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus in consectetur iure corrupti voluptate id, nostrum deleniti!</p>
+                                    <a href="#">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Second day
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <h5>HTML Basic Video</h5>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, voluptate adipisci laudantium quae temporibus debitis.</p>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                                    <a href="#" class="btn btn-info"><i class="fa-solid fa-play"></i>Play Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Last day
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <h5>HTML About</h5>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, illum? Amet, repellat distinctio? Minima accusantium quas sequi sint id? Molestias sunt aliquam deleniti hic laboriosam.</p>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, perspiciatis sunt suscipit eligendi consequuntur provident?<a href="#">Learn More</a></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tabs Parts -->
+                <div class="right col-lg-7">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">CSS</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">More Info</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                            <br><br>
+                            <h5>HTMl:</h5>
+                            <hr>
+                            <p><strong>About:</strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, natus. Explicabo quia odit consequatur ut laboriosam quis reprehenderit! Atque inventore cupiditate quae omnis, neque maiores amet,
+                                architecto assumenda hic voluptatum alias. Laboriosam nostrum tenetur debitis expedita quo iste, nam velit eveniet voluptas facilis fugit animi harum tempore porro accusantium eos!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem consequatur ducimus harum minima expedita saepe porro, molestias exercitationem qui nisi?</p>
+                        </div>
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                            <form action="#">
+                                <input type="text" name="user-name" id="" placeholder="username/number" class="form-control mt-4 mb-2"><br>
+                                <input type="password" name="password" id="" placeholder="password" class="form-control"><br>
+                                <input type="submit" value="Log in" name="" id="" class="btn btn-success">
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"><br><br>
+                            <h5>CSS</h5>
+                            <p><strong>Read:</strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque praesentium fugit excepturi porro tempore voluptate perferendis, a ad earum sapiente deleniti obcaecati voluptates iure sequi eaque dolorum
+                                tenetur minima ipsa, fuga enim? Itaque modi voluptatum consequatur tenetur, ad assumenda, animi temporibus velit distinctio dolorem iusto debitis repellendus harum nemo veritatis?</p>
+                            <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal"><strong>Buy Now: $50</strong></a>
+                            <!-- modal parts -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5>Bkash:01952467754</h5>
+                                            <form action="#">
+                                                <input type="text" name="username" id="" placeholder="type your name ?" class="form-control"><br>
+                                                <input type="number" name="usernumber" placeholder="type your Bkash number?" class="form-control"><br>
+                                                <input type="text" placeholder="type your transition id ?" class="form-control"><br>
+                                                <input type="submit" value="order complete" name="" id="" class="btn btn-outline-success">
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0"><br><br>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio temporibus sit commodi eos enim a nam atque eligendi pariatur, magnam ducimus fuga, similique consectetur. A quas voluptatem doloribus impedit, velit pariatur
+                                sapiente deserunt deleniti aspernatur autem officia sed accusamus nobis totam accusantium, unde soluta aliquid corrupti explicabo reprehenderit ducimus sequi dolor quia. Nostrum aspernatur ullam iste quas. Quod odio ipsum
+                                aliquid, error voluptatibus inventore nisi, quibusdam mollitia aut expedita illo labore placeat provident magni a at dolores, sint illum deleniti atque iusto veniam! Necessitatibus nemo praesentium placeat. Sequi fuga unde
+                                cupiditate non perferendis atque distinctio. Animi similique saepe itaque ex. <a href="#">learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- font awesome kids -->
+    <script src="https://kit.fontawesome.com/763e0e1bf4.js" crossorigin="anonymous"></script>
+    <!-- js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+
+</html>
